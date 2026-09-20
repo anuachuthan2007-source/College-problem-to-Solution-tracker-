@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="dashboard-page">
+
+    <div class="dashboard-container">
+
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <h1>Problem-to-Solution Tracker</h1>
+
+                <p>Student Dashboard</p>
+
+            </div>
+
+
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+
+        </header>
+
+
+
+        <!-- WELCOME SECTION -->
+
+        <section class="welcome-section">
+
+            <h2>Welcome, Student 👋</h2>
+
+            <p>
+                Report problems, suggest solutions and track
+                improvements in your college.
+            </p>
+
+        </section>
+
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats-container">
+
+
+            <div class="stat-card">
+
+                <h3>0</h3>
+
+                <p>My Reports</p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>0</h3>
+
+                <p>Solutions Suggested</p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>0</h3>
+
+                <p>Resolved Problems</p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>0</h3>
+
+                <p>Active Problems</p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- QUICK ACTIONS -->
+
+        <section class="action-section">
+
+            <h2>Quick Actions</h2>
+
+
+            <div class="action-grid">
+
+
+                <!-- REPORT PROBLEM -->
+
+                <div class="action-card">
+
+                    <div class="icon">📢</div>
+
+                    <h3>Report a Problem</h3>
+
+                    <p>
+                        Report a problem you found in the college.
+                    </p>
+
+                    <button onclick="reportProblem()">
+                        Report Problem
+                    </button>
+
+                </div>
+
+
+
+                <!-- BROWSE PROBLEMS -->
+
+                <div class="action-card">
+
+                    <div class="icon">🔎</div>
+
+                    <h3>Browse Problems</h3>
+
+                    <p>
+                        View problems reported by other students.
+                    </p>
+
+                    <button 
+                    onclick="window.location.href='problems.html'">
+                      View Problems
+                   </button>
+
+                </div>
+
+
+
+                <!-- SUGGEST SOLUTION -->
+
+                <div class="action-card">
+
+                    <div class="icon">💡</div>
+
+                    <h3>Suggest a Solution</h3>
+
+                    <p>
+                        Share your ideas to solve college problems.
+                    </p>
+
+                    <button onclick="suggestSolution()">
+                        Suggest Solution
+                    </button>
+
+                </div>
+
+
+
+                <!-- MY REPORTS -->
+
+                <div class="action-card">
+
+                    <div class="icon">📋</div>
+
+                    <h3>My Reports</h3>
+
+                    <p>
+                        Track the problems you have reported.
+                    </p>
+
+                    <button onclick="myReports()">
+                        View My Reports
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RECENT PROBLEMS -->
+
+        <section class="recent-section">
+
+            <h2>Recent Problems</h2>
+
+
+            <div class="empty-state">
+
+                <div class="empty-icon">📭</div>
+
+                <h3>No problems reported yet</h3>
+
+                <p>
+                    Report the first problem and help improve
+                    your college.
+                </p>
+
+                <button onclick="reportProblem()">
+                    Report a Problem
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
