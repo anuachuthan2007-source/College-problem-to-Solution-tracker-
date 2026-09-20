@@ -1,0 +1,594 @@
+/* ============================= */
+/* GENERAL RESET */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* BODY */
+/* ============================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #f5f7ff);
+    min-height: 100vh;
+}
+
+
+/* ============================= */
+/* LOGIN / FORM CONTAINER */
+/* ============================= */
+
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ============================= */
+/* HEADINGS */
+/* ============================= */
+
+.login-box h1 {
+    text-align: center;
+
+    color: #1e3a8a;
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+    text-align: center;
+
+    color: #666;
+
+    font-size: 14px;
+
+    margin-bottom: 28px;
+}
+
+
+.login-box h2 {
+    margin-bottom: 20px;
+
+    color: #222;
+}
+
+
+/* ============================= */
+/* LABELS */
+/* ============================= */
+
+label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+/* ============================= */
+/* INPUTS */
+/* ============================= */
+
+input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+input:focus {
+    border-color: #2563eb;
+}
+
+
+/* ============================= */
+/* SELECT */
+/* ============================= */
+
+select {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background: white;
+}
+
+
+select:focus {
+    border-color: #2563eb;
+}
+
+
+/* ============================= */
+/* TEXTAREA */
+/* ============================= */
+
+textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+
+    outline: none;
+
+    resize: vertical;
+}
+
+
+textarea:focus {
+    border-color: #2563eb;
+}
+
+
+/* ============================= */
+/* FILE INPUT */
+/* ============================= */
+
+input[type="file"] {
+    padding: 10px;
+
+    background: #f8f9fa;
+}
+
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ============================= */
+/* MESSAGE */
+/* ============================= */
+
+#message,
+#registerMessage,
+#problemMessage {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+
+
+/* ============================= */
+/* REGISTER TEXT */
+/* ============================= */
+
+.register-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+.register-text a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================================= */
+/* STUDENT DASHBOARD */
+/* ================================================= */
+
+.dashboard-page {
+    display: block;
+
+    min-height: 100vh;
+
+    height: auto;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    background: #f5f7ff;
+}
+
+
+.dashboard-container {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 25px 20px;
+}
+
+
+/* ============================= */
+/* DASHBOARD HEADER */
+/* ============================= */
+
+.dashboard-header {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+.dashboard-header h1 {
+    color: #1e3a8a;
+
+    margin-bottom: 5px;
+}
+
+
+.dashboard-header p {
+    color: #666;
+}
+
+
+.logout-btn {
+    width: auto;
+
+    padding: 10px 20px;
+}
+
+
+/* ============================= */
+/* WELCOME */
+/* ============================= */
+
+.welcome-section {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.welcome-section h2 {
+    color: #1e3a8a;
+
+    margin-bottom: 8px;
+}
+
+
+/* ============================= */
+/* STATISTICS */
+/* ============================= */
+
+.stats-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.stat-card {
+    background: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+
+.stat-card h3 {
+    font-size: 28px;
+
+    color: #2563eb;
+
+    margin-bottom: 8px;
+}
+
+
+/* ============================= */
+/* ACTION SECTION */
+/* ============================= */
+
+.action-section,
+.recent-section {
+    margin-bottom: 30px;
+}
+
+
+.action-section h2,
+.recent-section h2 {
+    margin-bottom: 15px;
+
+    color: #222;
+}
+
+
+/* ============================= */
+/* ACTION GRID */
+/* ============================= */
+
+.action-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.action-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+
+.action-card .icon {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.action-card h3 {
+    margin-bottom: 8px;
+}
+
+
+.action-card p {
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+
+/* ============================= */
+/* EMPTY STATE */
+/* ============================= */
+
+.empty-state {
+    background: white;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+
+.empty-icon {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================================================= */
+/* REPORT PROBLEM PAGE */
+/* ================================================= */
+
+.report-page {
+    display: block;
+
+    min-height: 100vh;
+
+    height: auto;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    background: linear-gradient(135deg, #e3f2fd, #f5f7ff);
+}
+
+
+.report-page .login-container {
+    display: flex;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    height: auto;
+
+    padding: 30px 20px;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+.report-page .login-box {
+    margin: 20px auto;
+
+    width: 100%;
+
+    max-width: 420px;
+}
+
+
+/* ================================================= */
+/* MOBILE RESPONSIVE */
+/* ================================================= */
+
+@media (max-width: 700px) {
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .dashboard-header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+}
+
+
+/* ================================================= */
+/* SMALL MOBILE */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+    .login-box {
+        padding: 25px;
+    }
+
+
+    .login-box h1 {
+        font-size: 23px;
+    }
+
+
+    .dashboard-container {
+        padding: 15px;
+    }
+
+
+    .stats-container {
+        gap: 10px;
+    }
+
+
+    .stat-card {
+        padding: 15px;
+    }
+
+
+    .action-card {
+        padding: 20px;
+    }
+
+}
+#solutionMessage {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2563eb;
+    min-height: 20px;
+}
