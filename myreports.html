@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Reports</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="dashboard-page">
+
+    <div class="dashboard-container">
+
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <h1>Problem-to-Solution Tracker</h1>
+
+                <p>My Reported Problems</p>
+
+            </div>
+
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+
+        </header>
+
+
+        <!-- PAGE TITLE -->
+
+        <section class="welcome-section">
+
+            <h2>My Reports</h2>
+
+            <p>
+                View the problems you have reported and track
+                their current status.
+            </p>
+
+        </section>
+
+
+        <!-- REPORT CARD -->
+
+        <section class="action-section">
+
+            <div class="action-card">
+
+                <div class="icon">📢</div>
+
+                <h3>Classroom Projector Not Working</h3>
+
+                <p>
+                    The projector in the classroom is not working
+                    properly during lectures.
+                </p>
+
+                <p>
+                    <strong>Category:</strong> Classroom
+                </p>
+
+                <p>
+                    <strong>Location:</strong> Block A - Room 204
+                </p>
+
+                <p>
+                    <strong>Status:</strong> Under Review
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- BACK TO DASHBOARD -->
+
+        <section class="recent-section">
+
+            <div class="empty-state">
+
+                <h3>Want to report another problem?</h3>
+
+                <p>
+                    Help improve your college by reporting an issue.
+                </p>
+
+                <button onclick="reportProblem()">
+                    Report a Problem
+                </button>
+
+                <br><br>
+
+                <button onclick="window.location.href='dashboard.html'">
+                    ← Back to Dashboard
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
