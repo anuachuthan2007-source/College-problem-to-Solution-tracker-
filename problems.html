@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Problems</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="dashboard-page">
+
+    <div class="dashboard-container">
+
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <h1>Problem-to-Solution Tracker</h1>
+
+                <p>Browse College Problems</p>
+
+            </div>
+
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+
+        </header>
+
+
+        <!-- PAGE TITLE -->
+
+        <section class="welcome-section">
+
+            <h2>Reported Problems</h2>
+
+            <p>
+                View problems reported by students and support
+                suitable solutions.
+            </p>
+
+        </section>
+
+
+        <!-- PROBLEM CARD -->
+
+        <section class="action-section">
+
+            <div class="action-card">
+
+                <div class="icon">📢</div>
+
+                <h3>Classroom Projector Not Working</h3>
+
+                <p>
+                    The projector in the classroom is not working
+                    properly during lectures.
+                </p>
+
+                <p>
+                    <strong>Category:</strong> Classroom
+                </p>
+
+                <p>
+                    <strong>Location:</strong> Block A - Room 204
+                </p>
+
+                <p>
+                    <strong>Status:</strong> Under Review
+                </p>
+
+                <button 
+                onclick="window.location.href='suggest.html'">
+                    Suggest Solution
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- BACK BUTTON -->
+
+        <section class="recent-section">
+
+            <div class="empty-state">
+
+                <h3>Want to report another problem?</h3>
+
+                <p>
+                    Help improve your college by reporting an issue.
+                </p>
+
+                <button onclick="reportProblem()">
+                    Report a Problem
+                </button>
+
+                <br><br>
+
+                <button onclick="window.location.href='dashboard.html'">
+                    ← Back to Dashboard
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
