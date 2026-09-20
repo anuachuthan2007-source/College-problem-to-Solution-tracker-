@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <div class="dashboard-container">
+
+        <header class="dashboard-header">
+            <div>
+                <h1>Problem-to-Solution Tracker</h1>
+                <p>Review Suggested Solutions</p>
+            </div>
+
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+        </header>
+
+
+        <section class="welcome-section">
+
+            <h2>Suggested Solutions</h2>
+
+            <p>
+                Review solutions suggested by students for reported problems.
+            </p>
+
+        </section>
+
+
+        <section class="action-section">
+
+            <div class="action-card">
+
+                <div class="icon">💡</div>
+
+                <h3>
+                    Classroom Projector Not Working
+                </h3>
+
+                <p>
+                    Students have suggested solutions for this
+                    classroom projector problem.
+                </p>
+
+                <p>
+                    <strong>Suggested Solution:</strong>
+                </p>
+
+                <p>
+                    Check the projector connection and replace the
+                    HDMI cable if necessary.
+                </p>
+
+                <p>
+                    <strong>Status:</strong> Pending Review
+                </p>
+
+                <button onclick="alert('Solution approved successfully!')">
+                    Approve Solution
+                </button>
+
+                <br><br>
+
+                <button onclick="alert('Solution rejected.')">
+                    Reject Solution
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="recent-section">
+
+            <div class="empty-state">
+
+                <h3>Admin Controls</h3>
+
+                <p>
+                    Review student suggestions and select a suitable
+                    solution for each problem.
+                </p>
+
+                <button onclick="window.location.href='admin.html'">
+                    ← Back to Admin Dashboard
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
