@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report a Problem</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="report-page">
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>Report a Problem</h1>
+
+            <p class="subtitle">
+                Help improve your college by reporting an issue
+            </p>
+
+
+            <form id="problemForm">
+
+
+                <label>Problem Title</label>
+
+                <input
+                    type="text"
+                    id="problemTitle"
+                    placeholder="Example: Lab projector not working"
+                    required
+                >
+
+
+                <label>Category</label>
+
+                <select id="category" required>
+
+                    <option value="">
+                        Select category
+                    </option>
+
+                    <option value="Classroom">
+                        Classroom
+                    </option>
+
+                    <option value="Laboratory">
+                        Laboratory
+                    </option>
+
+                    <option value="Hostel">
+                        Hostel
+                    </option>
+
+                    <option value="Canteen">
+                        Canteen
+                    </option>
+
+                    <option value="Transport">
+                        Transport
+                    </option>
+
+                    <option value="Library">
+                        Library
+                    </option>
+
+                    <option value="Campus">
+                        Campus
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <label>Problem Location</label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Example: Block A - Room 204"
+                    required
+                >
+
+
+                <label>Problem Description</label>
+
+                <textarea
+                    id="description"
+                    placeholder="Describe the problem clearly..."
+                    rows="5"
+                    required
+                ></textarea>
+
+
+                <label>Upload Image</label>
+
+                <input
+                    type="file"
+                    id="problemImage"
+                    accept="image/*"
+                >
+
+
+                <button type="submit">
+                    Submit Problem
+                </button>
+
+
+            </form>
+
+
+            <p id="problemMessage"></p>
+
+
+            <p class="register-text">
+
+                <a href="dashboard.html">
+                    ← Back to Dashboard
+                </a>
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
